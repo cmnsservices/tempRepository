@@ -3,3 +3,7 @@
   start_date: "2024-04-01T08:25:00Z"
   delay: 5
   fail_on_prepare_env_warning: true
+  actions:
+  - action: "Wait for approval"
+    type: "WAIT_FOR_APPLY"
+    comment: "cm.ns.services@gmail.com"
