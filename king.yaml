@@ -16,4 +16,5 @@
     - "echo $BUDDY_EXECUTION_CHANGELOG_ADDED"
     - "echo $BUDDY_EXECUTION_ID"
     - "echo $BUDDY_EXECUTION_BRANCH"
+    - "echo $BUDDY_EXECUTION_MODE"
     shell: "BASH"
