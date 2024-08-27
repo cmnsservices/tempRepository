@@ -7,3 +7,11 @@
   - action: "Wait for approval"
     type: "WAIT_FOR_APPLY"
     comment: "cm.ns.services@gmail.com"
+  - action: "if ($BUDDY){echo \"yes\"}"
+    type: "BUILD"
+    docker_image_name: "library/ubuntu"
+    docker_image_tag: "20.04"
+    execute_commands:
+    - "echo $BUDDY"
+    - "if ($BUDDY){echo \"yes\"}"
+    shell: "BASH"
