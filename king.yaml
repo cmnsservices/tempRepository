@@ -13,5 +13,7 @@
     docker_image_tag: "20.04"
     execute_commands:
     - "echo $BUDDY"
-    - "if ($BUDDY){echo \"yes\"}"
+    - "echo $BUDDY_EXECUTION_CHANGELOG_ADDED"
+    - "echo $BUDDY_EXECUTION_ID"
+    - "echo $BUDDY_EXECUTION_BRANCH"
     shell: "BASH"
