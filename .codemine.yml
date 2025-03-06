@@ -1,0 +1,14 @@
+version: 1.0
+
+stages:
+  stage1:
+    jobs:
+    - [clonejob]
+  
+
+jobs:
+  clonejob:
+    description: repository cloning job
+    type: source-checkout
+    parameters:
+      branch: main
