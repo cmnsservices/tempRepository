@@ -7,8 +7,7 @@ stages:
   stage1:
     jobs:
     - [test1]
- 
-
+  
 jobs:
   test1:
     type: custom-container
@@ -17,4 +16,3 @@ jobs:
       scripts:
       - echo 'test'
     
-      
