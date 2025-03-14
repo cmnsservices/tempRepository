@@ -1,14 +1,20 @@
+# This is an example Quickstarter pipeline yaml configuration
+# Demonstrates multiple stages & parallel jobs execution
+
 version: 1.0
 
 stages:
   stage1:
     jobs:
-    - [clonejob]
-  
+    - [test1]
+ 
 
 jobs:
-  clonejob:
-    description: repository cloning job
-    type: source-checkout
+  test1:
+    type: custom-container
     parameters:
-      branch: main
+      image: ir.localzoho.com/alpine:latest
+      scripts:
+      - echo 'test'
+    
+      
